@@ -1,0 +1,49 @@
+.saidbar-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  margin-bottom: 39px;
+
+  // .span-btn {
+  //   padding: 18px;
+  //   background: #EA7C69;
+  //   border-radius: 8px;
+  //   border: 13px solid transparent;
+  // }
+
+  svg {
+    fill: #EA7C69;
+  }
+
+  .top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11.33px;
+    background-color: rgba(235, 150, 106,0.26);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.274);
+    }
+    &:active{
+      background-color: rgba(109, 107, 107, 0.274);
+    }
+  }
+
+  &.active {
+    svg {
+      fill: #ffffff;
+    }
+    padding: 18px;
+    background: #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.123);
+    border-radius: 8px;
+  }
+  &.log-out {
+    margin-top: 59px;
+  }
+}

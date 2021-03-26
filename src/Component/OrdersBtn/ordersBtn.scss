@@ -1,0 +1,33 @@
+.order-btn {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid #393C49;
+  box-sizing: border-box;
+  padding: 7px 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+  background-color: #1F1D2B;
+  color: #EA7C69;
+  cursor: pointer;
+
+  &.active-menu {
+    background-color: #EA7C69;
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    color: rgba(212, 60, 90, 0.904);
+    background-color: #181515a6;
+  }
+  &:active {
+    color: darkcyan;
+    background-color: #14344267;
+  }
+  
+  
+}

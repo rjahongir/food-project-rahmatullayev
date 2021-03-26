@@ -1,0 +1,14 @@
+.menu-btn-table {
+  position: relative;
+  margin-bottom: 24px;
+
+  .menu-btn-hr {
+  position: absolute;
+  width: 100%;
+  top: 107%;
+  left: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1.3px solid rgba(168, 168, 168, 0.144);
+  }
+}

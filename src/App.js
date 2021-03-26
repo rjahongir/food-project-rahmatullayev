@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
 
-function App() {
+import './assets/main.scss'
+import Saidbar from './Container/Saidbar/Saidbar'
+import HomePage from './Pages/HomePage'
+import Dashboard from './Pages/Dashboard'
+import Discount from './Pages/Discount/Discount'
+import Message from './Pages/Message/Message'
+import Notification from './Pages/Notification/Notification'
+import Setting from './Pages/Setting/Setting'
+const App = () => {
+const [activPage, setActivPage] = useState("")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="app">
+      <Saidbar activPage={activPage} setActivPage={setActivPage}/>
+
+    <Switch>
+      <Route path="/homePage" component={HomePage}/>
+      <Route path="/dashboard" component={Dashboard}/>
+      <Route path="/discount" component={Discount}/>
+      <Route path="/message" component={Message}/>
+      <Route path="/notification" component={Notification}/>
+      <Route path="/setting" component={Setting}/>
+    </Switch>
     </div>
-  );
+    </Router>
+    
+  )
 }
 
 export default App;

@@ -1,0 +1,50 @@
+.food-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .wrapper-food-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.nimadir{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 715px;
+  height: 70vh;
+  padding-top: 70px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar{
+      width: 0;
+      height: 0;
+  }
+}
+.food-header-select {
+  width: 100px;
+  padding: 15px;
+  outline: none;
+  background: #1F1D2B;
+  border: 1px solid #393C49;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  transition: all 0.1s ease;
+  
+  &:hover {
+    color: #EA7C69;
+    background-color: #2528368a;
+    box-shadow: none;
+    border: 1px solid white;
+  }
+  &:active {
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 81, 114, 0.151);
+    border: 1px solid #ffffff;
+  }
+}

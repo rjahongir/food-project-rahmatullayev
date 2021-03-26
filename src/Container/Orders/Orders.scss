@@ -1,0 +1,125 @@
+.order-food {
+  min-width: 460px;
+  padding: 24px;
+  border-radius: 16px 16px 0 16px;
+  background-color: #1F1D2B;;
+    .order-food__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .order-food-btn {
+    margin-bottom: 24px;
+  }
+
+  .price-item-qty {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .price_item{
+    margin-right: 255px;
+  }
+  .qty{
+    margin-right: 43px;
+  }
+  
+  .order-food-hr{
+    width: 100%;
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    border-bottom: 1.3px solid rgba(168, 168, 168, 0.144);
+  }
+
+  .pric-discount-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    // margin-top: 10px; //togirlanishi kerak shu joyi
+  }
+  .discount {
+    margin-right: 288px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ABBBC2;
+  }
+
+  .pric-discount {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: #FFFFFF;
+    text-align: right;
+  }
+
+  .payment-btn {
+    padding: 14px 116px;
+    margin-top: 24px;
+    border: 1px solid transparent;
+    outline: none;
+    background: #EA7C69;
+    box-shadow: 0px 4px 14px rgba(234, 124, 105, 0.3);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FAFAFA;
+    transition: all 0.2s ease;
+
+    &:hover {
+      &:hover {
+        color: #EA7C69;
+        background-color: #2528368a;
+        box-shadow: none;
+        border: 1px solid white;
+      }
+      &:active {
+        color: rgb(255, 255, 255);
+        background-color: rgba(25, 255, 4, 0.151);
+        border: 1px solid transparent;
+      }
+    }
+  }
+  .food-menu-hr {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1.3px solid rgba(168, 168, 168, 0.144);
+    margin-bottom: 19px;
+    }
+}
+
+.cancel, .confirm-ayment {
+  width: 175px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  margin-right: 13px;
+  outline: none;
+  margin-top: 89px;
+  padding: 14px;
+  background-color: #2D303E;
+  color: #EA7C69;
+  border: 0.5px solid #393C49;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+
+&:hover {
+  color: rgba(255, 255, 255, 0.877);
+  background-color: #14344270;
+}
+&:active {
+  color: rgba(212, 60, 90, 0.904);
+  background-color: #1815158c;
+}
+}
+.confirm-ayment {
+  background-color: #EA7C69;
+  color: white;
+}
